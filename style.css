@@ -1,0 +1,42 @@
+html {
+    background-color: rgba(60, 57, 154, 0.21);
+    margin: 35px;
+}
+
+header {
+    margin: 50px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+article {
+    background-color: rgba(62, 62, 231, 0.172);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin: 35px;
+    padding-left: 10px;
+}
+
+div {
+    margin: 50px;
+}
+
+span {
+    background-color: rgba(246, 10, 179, 0.266);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+
+}
+
+.campoText {
+    background-color: rgba(66, 221, 48, 0.302);
+    margin: 45px;
+    border: 10px;
+    padding: 20px;
+}
+
+a {
+    font-size: 25px;
+    display: contents;
+
+}

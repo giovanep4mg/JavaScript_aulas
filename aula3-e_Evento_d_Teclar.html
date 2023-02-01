@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de Clicar</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!----JS---->
+    <script>
+        /*
+        onkeyUp = exibe o caractere e depois executa a ação.
+
+        onKeyDown = executa a ação e depois exibi o caractere.
+        
+        onKeyPress = executa a ação de depois exibi o caractere.
+        Não tem suporte as seguintes teclas:
+        F1..F2,ALT,CTRL,SHIFT,....
+
+        */
+                //função
+                function exibir(){
+
+                //Obter o valor do campo texto
+                var campo = document.getElementById("campo").value;
+            
+                //exibir o conteudo digitado no campo
+                alert(campo);
+                
+                }
+
+
+    </script>
+</head>
+<body>   
+        <main>
+            <header><h1>Evento de Clicar</h1></header>
+            <article>
+                <h2>
+                    * onkeyUp *<br>
+                    Exibe o caractere e depois executa a ação.<br>
+                    <br>
+                    * onKeyDown *<br>
+                    Executa a ação e depois exibi o caractere.<br>
+                    <br>
+                    * onKeyPress * <br>
+                    Executa a ação de depois exibi o caractere.<br>
+                    Não tem suporte as seguintes teclas:<br>
+                    F1..F2,ALT,CTRL,SHIFT,....<br>
+                </h2>
+            </article>
+            <br>
+            <div>
+                <h2 class="exemploCodigo">
+                    <span>Exemplo de código:</span><br>
+                        <br>
+                        "script" >> abre a tag <br>
+                        <br>
+                        //funçao.<br>
+                        function exibir (){<br>
+                        <br>
+                        <br>
+                        _________// Obter o valor do campo texto<br>
+                        _________var campo = document.getElementById("campo").value; <br>
+                        <br>
+                        <br>
+                        __________//exibir o conteudo digitado no campo <br>
+                        __________alert(campo);  <br>
+                        <br>
+                        <br>
+                        }<br>
+                        <br>
+                        Cria um campo de texto, como está abaixo:<br>
+                        Vai pegar a primeiro caractere, mostra na "janelinha",<br>
+                        fará isso toda vez que for digitado um caractere, e somando ao que já foi digitado.<br>
+                        
+                </h2>
+            </div>
+            <div>
+                <input type="texto" id="campo" onkeyup="exibir()">
+            </div>
+        </main>
+        <br>
+        <br>
+        <div>
+            <a href="aula4-b_Seletores_classe.html">Próxima página</a>
+        </div>
+        <br>
+        <div>
+            <a href="aula3-d_Evento_Carregamento.html">Voltar </a>
+        </div>
+        <br>
+        <div>
+            &copy;Giovani Teodoro Martins
+        </div>
+        <br>
+        <br> 
+        <br>  
+        <br>  
+</body>
+</html>

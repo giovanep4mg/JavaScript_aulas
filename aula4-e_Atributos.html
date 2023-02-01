@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atributos</title>
+  <!--CSS-->
+  <link href="style.css" rel="stylesheet">
+  <!---JS---->
+  <script>
+    /*
+    Realiza a troca de links, você clica no link vai para "A", volta e escolhe "alterar link", 
+    quando você clicar no mesmo link vai para "B".
+    */
+
+
+            //Função
+            function alterarLink(){
+     
+
+      // obter um link >> 
+      // pega na posição zero, o que tem dentro da tag "a", e salva na variável "link".
+      var link = document.getElementsByTagName("a")[0];
+
+
+      //Alterar link >>
+      // pega o endereço web, e salva na variável "link"
+      link.href = "https://github.com/giovanep4mg";
+
+      
+
+      }
+
+
+  </script>
+<body>
+  <main>
+    <header><h1>Atributos</h1></header>
+    <article>
+      <h2>
+        Realiza a troca de links.<br>
+        Você clica no link "Clique aqui", vai para site "A",<br>
+        Se você clicar no botão "alterar link",<br> 
+        quando você clicar no mesmo link vai para o site"B".<br>
+        Adiciona um link, na página "HTML", e outro no "script".<br>
+      </h2>
+    </article>
+    <br>
+    <div>
+      <h2 class="exemploCodigo">
+        <span>Exemplo de código:</span><br>
+        <br>
+        "script" >> abre a tag <br>
+        <br>
+        //funçao.<br>
+        function alterarLink() {<br>
+        <br>
+        <br>
+        ___// obter um link >> <br>
+        ___// pega na posição zero, o que tem dentro da tag "a", e salva na variável "link".<br>
+        ___var link = document.getElementsByTagName("a")[0];<br>
+        <br>
+        <br>
+        _________//CSS = muda "estilo da cor", do que tem na var "texto" <br>
+        _________texto.style.color = "#ffAa21";<br>
+        <br>
+        <br>
+        _________//CSS = muda o "tamanho da fonte", do que tem na var "texto" <br>
+        _________texto.style.fontSize = "5rem";<br>
+        <br>
+        <br>
+        _______//pega o "Curso....", E salva na variável "texto", com as modificações adicionadas "CSS".<br>
+        _______texto.innerHTML = "Curso de JavaScript"; <br>
+        <br>
+        <br>
+        __}<br>
+        <br>
+        Clique no botão que está abaixo:<br>
+        Que vai acionar as modificaçóes <br>
+        <br>
+      </h2>
+    </div>
+    <div class="campoText">
+      <!--link de endereço web, sites, páginas, etc..-->
+      <br>
+      LINK PARA SITE A ou B <br>
+      <a href="https://www.facebook.com/giovani.martins3/">clique aqui</a><br>
+      <br>
+      <!--cria um botão que vai acionar a Função "alterarLink"-->
+      Quando clicar nesse botão vai alterar o link.<br>
+      E quando você clicar no link, vai para outra página.<br>
+      <button onclick="alterarLink()">Alterar link</button>
+    </div>
+  </main>
+  <br>
+  <br>
+  <div>
+    <a href="aula1_EstruturaBase.html">Inicio </a>
+  </div>
+  <br>
+  <div>
+    <a href="aula4-d_Manipular_o_CSS.html">Voltar </a>
+  </div>
+  <br>
+  <div>
+    &copy;Giovani Teodoro Martins
+  </div>
+  <br>
+  <br> 
+  <br>  
+  <br> 
+</body>
+</html>

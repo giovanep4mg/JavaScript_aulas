@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de escolha "SWITCH"</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!--JS-->
+    <script>
+        /*
+        Usado para quando você tem várias opções como um "menu", ai tem que escolher entre algumas opções.
+        Na hora de exibir a mensagem, pode ter outras coisas, outros comandos.
+        Não dá pra usar operadores relacionais (maior que, menor que....)
+        */
+
+        //varável
+        var codigo = 4 ;
+
+
+    //escolha (passa o codigo escolhido)
+        switch(codigo){
+        
+        //caso seja o código "1"
+            case 1:
+                //exibe essa mensagem
+                alert("Pizza");
+            //parada     
+            break;
+
+        //caso seja o código seja "2"    
+            case 2:
+                //exibi essa mensagem
+                alert("Suco");
+            //parada
+            break;
+
+        //caso seja o código "3"
+            case 3:
+                //exibi essa mensagem
+                alert("Macarrão");
+            //parada
+            break;
+
+        //caso não seja nenhum dos códigos
+            default:
+                //exibi essa mensagem
+                alert("Código inválido!");
+
+        }
+
+    </script>
+</head>
+<body>
+    <main>
+        <header><h1>Estrutura de escolha "SWITCH"</h1></header>
+        <article>
+            <h2>
+            Para executar ações, quando você tem várias opções.<br>
+            Como um menu, várias coisas, que cada uma dá uma respota diferente.<br>
+            Não usa os condicionais relacionais (maior q,menor q,igual q...).<br>
+            Pode ser usado com condicionais que usam "if".
+            <br>
+            No exemplo:<br>
+             Menu de restaurante.<br>
+            </h2>
+        </article>
+        <br>
+        <div>
+            <h2>
+                <span>Exemplo de código:</span><br>
+                    "script" >> abre a tag <br>
+                    <br>
+                    //variável<br>
+                    var codigo = 1;<br>
+                    <br>
+                    <br>
+                    //escolha (de acordo com o código) <br>
+                    switch(codigo) { <br>
+                    <br>
+                    //caso seja 1; vai exibir essa mensagem.<br>
+                    ____case 1:<br>
+                    _______alert("Pizza"); <br>
+                    //break = parar <br>
+                    ____break: <br>
+                    <br>
+                    //caso seja 2; vai exibir essa mensagem. <br>
+                    ____case 1:<br>
+                    _______alert("Suco"); <br>
+                    ____break: <br>
+                    <br>
+                    //caso seja 3; vai exibir essa mensagem. <br>
+                    ____case 3:<br>
+                    _______alert("Macarrão"); <br>
+                    ____break: <br>
+                    <br>
+                    ____default: <br>
+                    _________alert("Código inválido.");
+                    <br>
+                    <br>
+                    "/script" > fecha a tag <br>
+            </h2>
+        </div>
+    </main>
+    <br>
+    <div>
+        <a href="aula1-M_Lacos_de_Repeticao_Enquanto.html">Próxima página</a>
+    </div>
+    <br>
+    <div>
+        <a href="aula1-k_Operador_logico_nao.html">Voltar </a>
+    </div>
+    <br>
+    <div>
+        &copy;Giovani Teodoro Martins
+    </div>
+    <br>
+    <br>
+</body>
+</html>

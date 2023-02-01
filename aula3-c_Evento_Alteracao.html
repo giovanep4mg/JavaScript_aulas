@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Alteraração</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!----JS---->
+    <script>
+
+
+        //FUNÇÃO
+        function mensagem (){
+
+
+            //Obter curso desejado
+            var curso = document.getElementById("cursos").value;
+
+            //exibir o curso selecionado
+            alert("Seu curso selecionado foi: "+curso);
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <main>
+        <header><h1>Evento Alteraração</h1></header>
+        <article>
+            <h2>
+                * onchange * <br>
+                Cria uma caixa de seleção, com algumas opções.<br>
+                Vai capturar o que foi selecionado, e mostra ao usuário na "janelinha".<br>
+            </h2>
+        </article>
+        <br>
+        <div>
+            <h2>
+                <span>Exemplo de código:</span><br>
+                <br>
+                    "script" >> abre a tag <br>
+                    <br>
+                    //criar a função mensagem,quando clicar vai chamar essa funçao.<br>
+                    function mensagem (){<br>
+                    <br>
+                    <br>
+                    //pega o valor dentro do id "cursos", e salva na variável "curso" <br>
+                    var curso = document.getElementById("cursos").value; <br>
+                    <br>
+                    <br>
+                    //exibir o curso selecionado, com um texto "Seu curso..." <br>
+                    alert("Seu curso selecionado foi: "+curso);<br>
+                    <br>
+                    } <br>
+                    <br>
+                    <br>
+                    "/script" > fecha a tag <br>
+                    <br>
+                    Será exibido uma caixinha de seleção, abaixo:<br>
+                    Que ao selecionar o curso desejado, irá abrir a "janelinha", mostrando qual foi o curso selecionado.<br>
+            </h2>
+        </div>
+        <!-----MENU DE ESCOLHA------>
+        <select onchange="mensagem()" id="cursos">
+            <option>Escolha seu curso</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JAVASCRIPT</option>
+        </select>
+       
+    </main>
+    <br>
+    <br>
+    <div>
+        <a href="aula3-d_Evento_Carregamento.html">Próxima página</a>
+    </div>
+    <br>
+    <div>
+        <a href="aula3-b_Evento_Clique.html">Voltar </a>
+    </div>
+    <br>
+    <div>
+        &copy;Giovani Teodoro Martins
+    </div>
+    <br>
+    <br> 
+    <br>
+    <br>
+</body>
+</html>

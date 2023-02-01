@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seletor através de Classe </title>
+  <!-----JS--->
+  <script>
+    //Selecionar atráves das classes ou classe.
+    //
+
+
+          //função
+          function exibirTexto(){
+             
+
+          //armazenar a tag com classe texto, expecificando qual classe você quer "0,1,2"
+          var campo = document.getElementsByClassName("texto")[2];
+
+            //exibir o conteúdo
+            alert(campo.innerHTML);
+          
+
+
+    }
+  </script>
+</head>
+<body>
+          <!---botao para acionar a função-->
+          <button onclick="exibirTexto()">Clique aqui</button>
+
+          <h1 class="texto">Titulo em h1</h1>
+          <h2 class="texto">Titulo em h2</h2>
+          <p class="texto">Titulo em Parágrafo</p>
+
+</body>
+</html>

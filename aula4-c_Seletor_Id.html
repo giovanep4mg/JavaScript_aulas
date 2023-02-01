@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selecionar pelo Id</title>
+  <!--CSS-->
+  <link href="style.css" rel="stylesheet">
+  <!----JS---->
+  <script>
+    //Vai copiar o dado digitado no campo de texto na página e exibir na "janelinha"
+    //Depois apaga o campo de texto, da página deixando em branco.
+    // Não precisa colocar qual é a tag, somente o "id"
+
+
+        //Funçao
+        function exibirConteudo(){
+
+
+        //obter dados do id campo = pega o texto do campo de texto, e salva na var "campo".
+        var campo = document.getElementById("entrada");
+
+        //exibir o conteúdo = o valor dentro da var "campo será exibido".
+        alert(campo.value);
+
+        //apagar o conteúdo = a var "campo" receberá um valor de "nada" dentro dela.
+        campo.value = "" ;
+
+          }
+
+
+
+
+  </script>
+</head>
+<body>
+  <main>
+    <header><h1>Seletor através de Classe</h1></header>
+    <article>
+      <h2>
+        Vai copiar o dado digitado no campo de texto na página e exibir na "janelinha".<br>
+        Depois apaga o campo de texto, da página deixando em branco.<br>
+        Não precisa colocar qual é a tag, somente o "id" <br>
+      </h2>
+    </article>
+    <br>
+    <div>
+      <h2 class="exemploCodigo">
+        <span>Exemplo de código:</span><br>
+        <br>
+        "script" >> abre a tag <br>
+        <br>
+        ___//funçao.<br>
+        ___function exibirConteudo (){<br>
+        <br>
+        <br>
+        ________//obter dados do id campo = pega o texto do campo de texto, e salva na var "campo".<br>
+        ________var campo = document.getElementById("entrada");<br>
+        <br>
+        <br>
+        ______//exibir o conteúdo = o valor dentro da var "campo será exibido". <br>
+        ______alert(campo.value);<br>
+        <br>
+        <br>
+        _______//apagar o conteúdo = a var "campo" receberá um valor de "nada" dentro dela.<br>
+        _______campo.value = "" ;<br>
+        <br>
+        __} <br>
+        <br>
+        Digite no campo está abaixo:<br>
+        E clique , vai salvar oque digitou e te mostrar, na "janelinha". <br>
+        <br>
+      </h2>
+    </div>
+    <div class="campoText">
+      <!--cria uma janela de campo, para adicionar texto, seu id é "campo"-->
+      <input type="text" id="entrada">
+      <br>
+      <!--cria um botão que vai iniciar a função-->
+      <button onclick="exibirConteudo()">Clique aqui</button>
+    </div>
+    </main>
+    <br>
+    <br>
+    <div>
+      <a href="aula4-d_Manipular_o_CSS.html">Próxima página</a>
+    </div>
+    <br>
+    <div>
+      <a href="aula4-b_Seletores_classe.html">Voltar </a>
+    </div>
+    <br>
+    <div>
+      &copy;Giovani Teodoro Martins
+    </div>
+    <br>
+    <br> 
+    <br>  
+    <br>  
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipular o CSS </title>
+  <!--CSS-->
+  <link href="style.css" rel="stylesheet">
+  <!-----JS---->
+  <script>
+    //Faz modificações no texto, CSS atráves da função, dos comando adicionados nla.
+    //
+
+    //Função
+    function acao(){
+
+     
+
+    //obter o elemento h1 = pega o h1, na posição "0", o que tem dentro dele e salva na var "texto".
+    var texto =document.getElementsByTagName("h1")[2];
+
+
+    //CSS = muda "estilo da cor", do que tem na var "texto"
+    texto.style.color = "#ffAa21";
+
+    //CSS = muda o "tamanho da fonte", do que tem na var "texto"
+    texto.style.fontSize = "5rem";
+
+
+    //pega o "Curso....", E salva na variável "texto", com as modificações adicionadas "CSS".
+    texto.innerHTML = "Exemplo , teste";
+
+
+
+    }
+
+
+  </script>
+</head>
+<body>
+  <main>
+    <header><h1>Manipular o CSS </h1></header>
+    <article>
+      <h2>
+        Para fazer modificações usando o CSS, por aqui mesmo.<br>
+        Usa o mesmo contesto, que você usa no CSS.<br>
+        Exemplo, vai pegar na posição 2, da tag "h1",vai fazer as seguintes modificações:<br>
+        Muda o estilo da cor, muda o tamanho da fonte, muda até o texto que estava na tag.<br>
+      </h2>
+    </article>
+    <br>
+    <div>
+      <h2 class="exemploCodigo">
+        <span>Exemplo de código:</span><br>
+        <br>
+        "script" >> abre a tag <br>
+        <br>
+        //funçao.<br>
+        function acao (){<br>
+        <br>
+        <br>
+        _________//obter o elemento h1 = pega o h1, na posição "2", o que tem dentro dele e salva na var "texto".<br>
+        _________var texto =document.getElementsByTagName("h1")[2];<br>
+        <br>
+        <br>
+        _________//CSS = muda "estilo da cor", do que tem na var "texto" <br>
+        _________texto.style.color = "#ffAa21";<br>
+        <br>
+        <br>
+        _________//CSS = muda o "tamanho da fonte", do que tem na var "texto" <br>
+        _________texto.style.fontSize = "5rem";<br>
+        <br>
+        <br>
+        _______//pega o "Curso....", E salva na variável "texto", com as modificações adicionadas "CSS".<br>
+        _______texto.innerHTML = "Curso de JavaScript"; <br>
+        <br>
+        <br>
+        }<br>
+        <br>
+        Clique no botão que está abaixo:<br>
+        Que vai acionar as modificaçóes <br>
+        <br>
+      </h2>
+    </div>
+    <div class="campoText">
+      <!--cria  um texto na página-->
+      <h1>JavaScript</h1>
+
+      <!--cria botão na página, que vai acionar a Função -->
+      <button onclick="acao()">Clique aqui</button>
+    </div>
+    <div>
+      <h1>Teste</h1>
+    </div>
+  </main>
+  <br>
+  <br>
+  <div>
+    <a href="aula4-e_Atributos.html">Proxima </a>
+  </div>
+  <br>
+  <div>
+    <a href="aula4-c_Seletor_Id.html">Voltar </a>
+  </div>
+  <br>
+  <div>
+    &copy;Giovani Teodoro Martins
+  </div>
+  <br>
+  <br> 
+  <br>  
+  <br>  
+</body>
+</html>

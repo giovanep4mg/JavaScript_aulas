@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seletor através de Classe </title>
+  <!--CSS-->
+  <link href="style.css" rel="stylesheet">
+  <!-----JS--->
+  <script>
+    //Selecionar atráves das classes ou classe.
+    //
+
+
+          //função
+          function exibirTexto(){
+             
+
+          //armazenar a tag com classe texto, expecificando qual classe você quer "0,1,2"
+          var campo = document.getElementsByClassName("texto")[2];
+
+            //exibir o conteúdo
+            alert(campo.innerHTML);
+          
+
+
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <header><h1>Seletor através de Classe</h1></header>
+    <article>
+      <h2>
+          Para selecionar o conteúdo de alguma tag, pelo sua classe.<br>
+          Você especifica qual é a tag, que quer modificar.<br>
+          Pode ser tags diferentes, com o mesmo nome de classe<br>
+          Para selecionar qual é a posição, usa "[?]", começando com zero.<br> 
+      </h2>
+    </article>
+    <article>
+      <h2>
+        Como é o código na tag, para ser selecionada:<br>
+        <br>
+        dentro da tag "h1 class="texto"> Titulo em h1  <br> 
+        dentro da tag "h2 class="texto"> Titulo em h2  <br>
+        dentro da tag "p class="texto"> Titulo em  Parágrafo <br>
+      </h2>
+    </article>
+    <br>
+    <div>
+      <h2 class="exemploCodigo">
+        <span>Exemplo de código:</span><br>
+        <br>
+        "script" >> abre a tag <br>
+        <br>
+        //funçao.<br>
+        function exibir texto (){<br>
+        <br>
+        <br>
+        _________//pega na posição 2, o id "texto", e salva na var "campo" <br>
+        _________var campo = document.getElementsByClassName("texto")[2]; <br>
+        <br>
+        <br>
+        __________//exibir a var "campo", em html  <br>
+        __________alert(campo.innerHTML); <br>
+        <br>
+        <br>
+        }<br>
+        <br>
+        Cria um botão, como está abaixo:<br>
+        Que mostra o que foi selecionado, dentro do código da página<br>
+        <br>
+      </h2>
+    </div>
+    <div class="campoText">
+      <!---botao para acionar a função-->
+      <button onclick="exibirTexto()">Clique aqui</button>
+
+      <h1 class="texto">Titulo em h1</h1>
+      <h2 class="texto">Titulo em h2</h2>
+      <p class="texto">Titulo em Parágrafo</p>
+    </div>
+  </main>
+  <br>
+  <br>
+  <div>
+    <a href="aula4-c_Seletor_Id.html">Próxima página</a>
+  </div>
+  <br>
+  <div>
+    <a href="aula4-a_Seletor.html">Voltar </a>
+  </div>
+  <br>
+  <div>
+    &copy;Giovani Teodoro Martins
+  </div>
+  <br>
+  <br> 
+  <br>  
+  <br>  
+</body>
+</html>

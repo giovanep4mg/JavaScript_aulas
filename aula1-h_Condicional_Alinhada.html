@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais Aninhada</title> 
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <script>
+        //variável
+        var media = 4;
+
+        //condicional aninhada
+        if(media == 10){
+            alert("Parabéns!");
+        }else if (media >= 9 ){
+            alert("Otimo!");
+        }else if(media >= 8){
+            alert("Bom!");
+        }else if(media >= 7){
+            alert("Na média");
+        }else if(media >= 5){
+            alert("Em exame.");
+        }else{
+            alert("Reprovado");
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <header><h1>Condicionais Aninhada no JS</h1></header>
+        <article>
+            <h2>
+            Usados para fazer verificações de acordo com as condições.<br>
+            Indicado quando você tem várias respostas.<br>
+            No exemplo: Escola, media de um aluno.<br>
+            </h2>
+        </article>
+        <br>
+        <div>
+            <h2>
+                <span>Exemplo de código:</span><br>
+                    "script" >> abre a tag <br>
+                    <br>
+                        //variável<br>
+                        var media = 8 ; <br>
+                        <br>
+                        <br>
+                        ------Condicional Aninhada---
+                        //se ( media for igual a 10 )  <br>
+                        ----if ( media == 10 ) { <br>
+                        <br>
+                        //exibi essa mensagem <br>
+                        ------------alert("Parabéns.")<br>
+                        <br>
+                        //senão , se ( media for maior ou igual a 9)<br>    
+                        } else if ( media >= 9 ) { <br>
+                        //exibi essa mensagem <br>
+                        ------------alert("Ótimo.")<br>
+                        <br>
+                        //senão , se ( media for maior ou igual a 8)<br>    
+                        } else if ( media >= 8 ) { <br>
+                        //exibi essa mensagem <br>
+                        ------------alert("Bom.")<br>
+                        <br>
+                        //senão , se ( media for maior ou igual a 7)<br>    
+                        } else if ( media >= 7 ) { <br>
+                        //exibi essa mensagem <br>
+                        ------------alert("Na média.")<br>
+                        <br>
+                        //senão , se ( media for maior ou igual a 5)<br> 
+                        } else if ( media >= 5 ) { <br>
+                        //exibi essa mensagem <br>
+                        ------------alert("Em análise.")<br>
+                        } else { <br>
+                        ------------alert("Reprovado.")<br>
+                        }<br>
+                        <br>
+                        <br>
+                    <br>
+                    "/script" > fecha a tag <br>
+            </h2>
+        </div>
+    </main>
+    <br>
+    <div>
+        <a href="aula1-I_OperadorLogico_E_&&.html">Próxima página</a>
+    </div>
+    <br>
+    <div>
+        <a href="aula1-g_Condicional_Simples.html">Voltar </a>
+    </div>
+    <br>
+    <div>
+        &copy;Giovani Teodoro Martins
+    </div>
+    <br>
+    <br>
+</body>
+</html>
